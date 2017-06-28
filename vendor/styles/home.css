@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Open Sans light';
+    src: url('../fonts/open-sans/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans regular';
+    src: url('../fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans semi-bold';
+    src: url('../fonts/open-sans/OpenSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans bold';
+    src: url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Open Sans light', sans-serif;
+    padding-bottom: 70px;
+}
+
+h1 {
+    font-family: 'Open Sans bold', sans-serif;
+    color: #124c86;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+h2 {
+    color: #124c86;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px
+}
+
+h3 {
+    color: #124c86;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+p {
+
+    color: #585858;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+a {
+    text-decoration: none;
+}
+.header-top {
+    background: #242d36;
+}
+.header-search {
+    margin: 7.5px 0;
+}
+
+.navbar-inverse {
+    border-radius: 0;
+}
+
+.navbar-second {
+    margin: 0 0;
+}
+
+.navbar-second div ul .dropdown {
+    margin: 45px 15px;
+}
+
+.navbar-second div ul .dropdown a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #004987;
+}
+
+.navbar-second div ul li:first-child img {
+    margin: 10px 0 0;
+}
+
+.surplus {
+    background-image: url("../img/herobanner_main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.surplus h1 {
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.surplus-text h1:first-child {
+    padding: 100px 0 0;
+}
+
+.surplus h2 {
+    font-family: 'Open Sans light', sans-serif;
+    color: white;
+    margin: 50px 0 0;
+}
+.surplus p:last-child{
+    padding:80px;
+}
+.surplus-btn {
+    margin: 120px 0 0;
+    padding: 10px 40px;
+    background: #2AACE3;
+    font-size: 21px;
+    border-radius: 3px;
+}
+
+.surplus-btn:hover {
+    background: #0091D3;
+}
+
+.surplus-link {
+    color: white;
+    font-family: 'Open Sans regular', sans-serif;
+
+}
+
+.surplus-link:hover {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+.footer {
+    background: #242d36;
+}
