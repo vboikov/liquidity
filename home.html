@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./vendor/styles/global.css">
     <link rel="stylesheet" href="./vendor/styles/home.css">
     <title></title>
 </head>
@@ -11,7 +12,7 @@
 <nav class="navbar-inverse header-top">
     <div class="container">
 
-        <div class="navbar-header">
+        <div class="navbar-header col-lg-4">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -25,38 +26,63 @@
         </div>
 
 
-        <p class="navbar-form navbar-left"></p>
-
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav  col-lg-4">
             <li class="form-group header-search">
+                <div class="searchIco">
+                    <img src="vendor/img/search_icon.png" alt="">
+                </div>
                 <input type="text" class="form-control" placeholder="Search">
             </li>
 
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="false">Investors <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="false">Careers<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-            </li>
+
         </ul>
+        <div class="col-lg-4 ">
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Investors <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Careers<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right socialNav">
+                <li>
+                    <a href="">
+                        <img src="vendor/img/social_icn_fb.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="vendor/img/social_icn_in.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="vendor/img/social_icn_twt.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
+<!--Nav with dropdown-->
+
 <nav class="navbar navbar-default navbar-second">
     <div class="container">
 
@@ -121,31 +147,178 @@
     </div>
 
 </nav>
+<!--Main display-->
+<div class="container-fluid">
+    <div class="row surplus">
+        <div class="container">
+            <div class="surplus-text text-center">
+                <h1>You Have Surplus.</h1>
+                <h1>We Have Solutions.</h1>
+                <h2>End-to-End Assets Lifecycle Solutions</h2>
+            </div>
 
-<div class="surplus">
+            <div class="row text-center">
+                <button class="btn btn-primary surplus-btn">Sell Surplus</button>
+                <button class="btn btn-primary surplus-btn">Buy Surplus</button>
+            </div>
 
-    <div class="surplus-text text-center">
-        <h1>You Have Surplus.</h1>
-        <h1>We Have Solutions.</h1>
-        <h2>End-to-End Assets Lifecycle Solutions</h2>
-    </div>
-
-    <p class="text-center">
-        <button class="btn btn-primary surplus-btn">Sell Surplus</button>
-        <button class="btn btn-primary surplus-btn">Buy Surplus</button>
-    </p>
-
-    <p class="text-center"><a class="surplus-link" href="#">Interested in Surplus Management solutions?</a></p>
-</div>
-
-<div class="row">
-    <div class="container">
-        <div class="liquidity-service">
-
+            <p class="text-center"><a class="surplus-link" href="#">Interested in Surplus Management solutions?</a></p>
         </div>
     </div>
 </div>
+<!--why us-->
+<div class="container-fluid whyUs">
+    <div class="row">
+        <div class="container">
+            <div class="liquidity-service">
+                <h2 class="sectionLabel">Why Liquidity Services?</h2>
+                <div class="col-lg-12">
+                    <div role="tabpanel" class="whyUsTab" id="whyUs">
+                        <!-- whyTab triggers -->
 
+                        <ul class="nav nav-tabs " role="tablist">
+                            <li role="presentation" class="active ">
+                                <a href="#sellers" aria-controls="Sellers" role="tab" data-toggle="tab">Sellers</a>
+                            </li>
+                            <li role="presentation" >
+                                <a href="#buyers" aria-controls="Buyers" role="tab" data-toggle="tab">Buyers</a>
+                            </li>
+                        </ul>
+
+                        <!-- whyTab content -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="sellers">
+                                <div class="col-lg-4 text-center plusAfterIco">
+                                    <div class="whyIcoInner">
+                                        <img src="vendor/img/better1_service_icn.png" alt="">
+                                    </div>
+                                    <h3>Better <b>Service</b></h3>
+                                    <p>Experts in your industry help manage the life of your assets.</p>
+                                </div>
+                                <div class="col-lg-4 text-center isAfterIco">
+                                    <div class="whyIcoInner">
+                                        <img src="vendor/img/better2_scale_icon.png" alt="">
+                                    </div>
+                                    <h3>Better <b>Scale</b></h3>
+                                    <p>We accurately value your asset and find a buyer for your</p>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="whyIcoInner">
+                                        <img src="vendor/img/better3_results_icn.png" alt="">
+                                    </div>
+                                    <h3>Better <b>Results</b></h3>
+                                    <p>We drive results with our services and scale so you maximize return.</p>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="buyers">
+                                <div class="col-lg-4 text-center">
+                                    <div class="whyIcoInner">
+                                        <img src="vendor/img/better1_service_icn.png" alt="">
+                                    </div>
+                                    <h3>Better <b>Service</b></h3>
+                                    <p>Experts in your industry help manage the life of your assets.</p>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="whyIcoInner">
+                                        <img src="vendor/img/better2_scale_icon.png" alt="">
+                                    </div>
+                                    <h3>Better <b>Scale</b></h3>
+                                    <p>We accurately value your asset and find a buyer for your</p>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="whyIcoInner">
+                                        <img src="vendor/img/better3_results_icn.png" alt="">
+                                    </div>
+                                    <h3>Better <b>Results</b></h3>
+                                    <p>We drive results with our services and scale so you maximize return.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--whyUs end-->
+<!--percentGraphic-->
+<div class="container-fluid percentGraphic">
+    <div class="row text-center">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <img src="vendor/img/20percent_graphic.png" alt="">
+                <p>The average amount of an organization's assets that are surplus to it's needs.</p>
+                <h3>We help turn your 20% surplus into 100% opportunity</h3>
+                <button class="btn btn-primary">Play Video</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--percentGraphic end-->
+<!--how we do it-->
+<div class="container-fluid howWeDoIt">
+    <div class="row">
+        <div class="container">
+            <h2 class="sectionLabel">We Sell Any Surplus. In Any Condition. Anywhere.</h2>
+            <h3 class="text-center">How We Do It</h3>
+            <div class="col-lg-12">
+                <div role="tabpanel" class="whyUsTab" id="whyUs">
+                    <!-- whyTab triggers -->
+
+                    <ul class="nav nav-tabs " role="tablist">
+                        <li role="presentation" class="active ">
+                            <a href="#identify" aria-controls="identify" role="tab" data-toggle="tab">
+
+                            </a>
+                        </li>
+                        <li role="presentation" >
+                            <a href="#select" aria-controls="select" role="tab" data-toggle="tab">
+
+                            </a>
+                        </li>
+                        <li role="presentation" >
+                            <a href="#target" aria-controls="target" role="tab" data-toggle="tab">
+
+                            </a>
+                        </li>
+                        <li role="presentation" >
+                            <a href="#sell" aria-controls="sell" role="tab" data-toggle="tab">
+
+                            </a>
+                        </li>
+                        <li role="presentation" >
+                            <a href="#report" aria-controls="report" role="tab" data-toggle="tab">
+
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- whyTab content -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="identify">
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="select">
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="target">
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="sell">
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="report">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
 <nav class="navbar navbar-default navbar-fixed-bottom footer">
     <div class="container">
         <div class="col-md-3">
@@ -189,9 +362,10 @@
             <img src="./vendor/img/liqlogo_main.png">
         </div>
     </div>
-</nav>
+</nav>-->
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./vendor/js/script.js"></script>
 </body>
 </html>
