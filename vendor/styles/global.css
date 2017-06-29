@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
     font-family: 'Open Sans light';
     src: url('../fonts/open-sans/OpenSans-Light.ttf') format('truetype');
 }
@@ -26,7 +26,6 @@
 
 body {
     font-family: 'Open Sans regular', sans-serif;
-    padding-bottom: 70px;
     color: #585858;
 }
 
