@@ -63,3 +63,6 @@ p {
 a {
     text-decoration: none;
 }
+.clear{
+    clear: both;
+}
