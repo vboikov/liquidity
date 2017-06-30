@@ -124,12 +124,11 @@
 }
 
 .surplus-btn {
-    margin: 0px 15px 0 15px;
+    margin: 0px 15px 90px 15px;
     padding: 10px 40px;
     background: #2AACE3;
     font-size: 21px;
     border-radius: 3px;
-    margin-bottom: 90px;
 
 }
 
@@ -202,6 +201,7 @@
 
 #whyUs li.active a {
     color: #004987;
+
 }
 .whyUsTab li.active a, .whyUsTab li a, .doItTab li.active a, .doItTab li a{
     border: none !important;
@@ -276,7 +276,7 @@
 
 }
 
-.percentGraphic button {
+.yellow-btn {
     background: #f6951d;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -285,8 +285,12 @@
     padding: 10px 40px;
     font-size: 21px;
 }
-
+.yellow-btn:hover {
+    background: #EB7F15;
+}
 /*percent graphic end*/
+
+
 /*howWeDoIt*/
 .howWeDoIt{
     padding-bottom: 140px;

@@ -1,0 +1,26 @@
+/* marketplace block */
+
+.marketplace {
+    background-image: url(../img/sell-banner.jpg) !important;
+    -moz-background-image: url(../img/sell-banner.jpg) !important;
+}
+.marketplace button {
+    margin: 0 0 200px 0;
+}
+
+.sell-page-labels h1:first-child{
+       margin: 20px 0 10px 0 !important;
+}
+
+.better-service-block{
+    background: #F8F8F8;
+}
+.better-service {
+    margin-bottom: 60px;
+}
+.blue-label{
+    font-size: 30px;
+    color: #2aace3;
+    font-family: 'Open Sans semi-bold', sans-serif;
+    margin-bottom: 60px;
+}
