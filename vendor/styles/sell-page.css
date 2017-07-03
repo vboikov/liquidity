@@ -24,3 +24,77 @@
     font-family: 'Open Sans semi-bold', sans-serif;
     margin-bottom: 60px;
 }
+
+.tab-content-indent{
+   padding-top: 80px;
+}
+.tab-content-indent:last-child {
+    padding-bottom: 80px;
+}
+.img-heading {
+    font-family: 'Open Sans bold', sans-serif;
+    color: #124c86;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.img-description {
+    margin-top: 40px;
+}
+
+.circle {
+    max-width: 100%;
+    background-size: 100%;
+    background-image: url(../img/doIt.png);
+    height: 113px;
+    display: block;
+}
+
+.pen {
+    background-position: 0;
+}
+.arrows {
+    background-position: 0 22.222222%;
+}
+.target{
+    background-position: 0 44.444444%;
+}
+.loupe {
+    background-position: 0 66.666667%;
+}
+
+.table {
+    background-position: 0 66.666667%;
+}
+
+.case-study {
+    background-image: url(../img/casestudy_indust_bg.jpg) !important;
+    -moz-background-image: url(../img/casestudy_indust_bg.jpg) !important;
+}
+
+.case-study h1:first-child {
+    font-family: "Open Sans light", sans-serif;
+}
+
+.case-study p {
+    color: white;
+    padding-bottom: 50px !important;
+}
+
+#five-tabs ul li{
+    width: 20%;
+}
+
+#five-tabs ul li a {
+    font-size: 25px;
+    padding: 20px 20px 30px 20px;
+}
+
+.bid-img {
+    padding-top: 40px;
+}
+
+.tab-text {
+    margin-top: 25px;
+}
