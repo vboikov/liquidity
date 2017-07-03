@@ -77,9 +77,7 @@
 
 /*Navbar with dropdown*/
 
-.navbar-second {
-    margin: 0 0;
-}
+
 
 .navbar-second div ul .dropdown {
     margin: 45px 10px;
@@ -89,9 +87,10 @@
     font-size: 18px;
     font-weight: 600;
     color: #004987;
+    padding: 10px 10px;
 }
 
-.navbar-second div ul li:first-child img {
+.navbar-second img {
     margin: 10px 0 0;
 }
 
@@ -440,6 +439,9 @@
 }
 
 .clients img{
+    display: block;
+    max-width:100%;
+    margin: 0 auto;
     filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
@@ -451,7 +453,7 @@
 /*clients END*/
 /*solutions*/
 .solutions{
-
+    padding-bottom: 20px;
 }
 .solutions h4{
     color: #00aeef;
@@ -627,9 +629,48 @@
     font-family:'Open Sans bold', sans-serif;
 }
 
-#auctionTabs a{
+.auctionTabs a{
     font-family:'Open Sans light', sans-serif;
     font-size: 18px;
+}
+
+.auction ul, .auction li.active a, .auction li a{
+    border: none;
+}
+#auctionTabs li.active {
+    border-color: #F7941D;
+}
+#auctionTabs li.active a{
+    color: #124c86 !important;
+
+}
+
+.auction li {
+    width: 50%;
+    text-align: center;
+    border-bottom: 10px solid #cdcdcd;
+    color: #cdcdcd;
+}
+.auction .nav-tabs>li.active>a, .auction .nav-tabs>li.active>a:focus,  .auction.nav-tabs>li.active>a:hover{
+    color: #555;
+    cursor: default;
+    background-color: transparent !important;
+    border: 0px solid #ddd;
+    border-bottom-color: transparent;
+}
+#auctionTabs .nav-tabs>li>a:hover{
+    background-color: transparent !important;
+
+}
+.auction #auctionTabs li a {
+    color: #d8d8d8;
+    font-size: 26px;
+    font-family: 'Open Sans semi-bold';
+}
+#auctionTabs img{
+
+    display: block;
+    margin: 0 auto;
 }
 /*auction END*/
 /*logistics*/
@@ -643,6 +684,7 @@
 }
 .logistics img{
     margin-bottom: 30px;
+
 }
 /*logistics END*/
 /*marketplace*/
@@ -761,4 +803,268 @@
     -ms-opacity: 0.7;
     opacity: 0.7;
 
+}
+/*MEDIA*/
+@media (min-width: 320px) and (max-width: 700px) {
+    .navbar-second img{
+        margin:3px 0;
+        float: left;
+    }
+    .navbar-second button{
+        background: #2AACE3;
+        margin: 0;
+        margin-right: -15px;
+        width: 45px;
+        text-align: center;
+        height: 45px;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        border-radius: 0;
+    }
+    .navbar-second button span{
+        background: #fff;
+    }
+    .navbar-second{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .surplus-text h1:first-child{
+        padding : 40px 0 0;
+    }
+    .surplus h1{
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+    .surplus h2{
+        margin: 30px 0 30px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .surplus-btn{
+        margin-bottom: 20px;
+    }
+    .surplus-link{
+
+    }
+    .surplus p:last-child{
+        padding: 20px 40px 20px 40px;
+    }
+    .surplus-link:after{
+        top: 25px;
+    }
+    .sectionLabel{
+        padding-top: 20px;
+        line-height: 1.1;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+    .whyUs{
+        padding-bottom: 40px;
+    }
+    .whyUsTab ul{
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    .plusAfterIco, .isAfterIco{
+        margin-bottom: 120px;
+    }
+    .plusAfterIco:after, .isAfterIco:after{
+        bottom: -95px;
+        top: auto;
+        right: 50%;
+        margin-right: -30px;
+    }
+    .percentGraphic{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .percentGraphic p{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .comments p{
+        font-size: 24px;
+    }
+    .comments .carousel-indicators{
+        bottom: -40px;
+    }
+
+    #doIt ul{
+        height: auto;
+    }
+    #doIt ul:after{
+        display: none;
+    }
+
+    .howWeDoIt .doItTab li{
+        width: 31%;
+        padding: 5px;
+        margin:1%;
+        border:1px solid #000;
+    }
+    .howWeDoIt .doItTab li.active, .howWeDoIt .doItTab li.active a{
+        background:  #004987;
+    }
+    .howWeDoIt .doItTab li.active h4{
+        color: #fff;
+    }
+    .howWeDoIt .doItTab li h4{
+        font-size: 16px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .howWeDoIt .doItTab li:after, .howWeDoIt .doItTab li span{
+        display: none;
+    }
+
+    .howWeDoIt .tab-content{
+        text-align: center;
+    }
+    .howWeDoIt .tab-content img{
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .solutions .tab-content img{
+        display: none;
+    }
+    .solutionAccordion h3, .solutionAccordion h4{
+        margin: 0;
+    }
+
+    .solutionAccordion .panel-collapse li{
+        margin-bottom: 10px;
+        padding: 10px 0 10px 0;
+        background: #ebebeb;
+        text-indent: 10px;
+    }
+    .solutionAccordion .panel-collapse li:last-child{
+        margin-bottom: 0;
+    }
+    .solutionAccordion .panel-collapse ul{
+        margin-bottom: 0;
+    }
+    .solutionAccordion a:focus,.solutionAccordion a:hover{
+        text-decoration: none;
+    }
+    .tabContent .contentLabel{
+        margin-bottom: 20px;
+    }
+    .tabCase{
+        padding: 10px;
+    }
+    .tabCase h5{
+        font-size: 18px;
+    }
+    .tabCase:after {
+        content: '';
+        position: absolute;
+        right: 110px;
+        top: 10px;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 0 10px 15px;
+        border-color: transparent transparent transparent #2AACE3;
+        line-height: 0px;
+        _border-color: #000000 #000000 #000000 #ebebeb;
+        _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+    }
+    .tabContentInner{
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+    }
+    .tabContent p{
+        margin-bottom: 20px;
+    }
+    .tabContent a{
+        margin-bottom: 20px;
+    }
+    .solutions h4{
+        margin-bottom: 20px;
+    }
+    .solutionAccordion h4{
+        margin-bottom: 0;
+    }
+    .auction{
+        padding-bottom: 40px;
+    }
+    .auction #auctionTabs li a{
+        font-size: 18px;
+    }
+    #auctionTabs{
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    .marketplace{
+        padding-bottom: 20px;
+    }
+    .marketIco img{
+        filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+        -webkit-filter: grayscale(0%);
+    }
+    .marketPlaces ul{
+        margin-bottom: 20px;
+        border:none;
+    }
+    .marketPlaces li,.marketPlaces li.active{
+        width: 100%;
+        border:none;
+    }
+    .marketPlaces li a{
+        color: #c5c6c7;
+    }
+    .marketPlaces li.active a{
+        background: transparent !important;
+        color: #2AACE3 !important;
+        border:none !important;
+    }
+    .solutionsDesktopTabs .noStyleTab{
+        padding: 0 0 0 60px;
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+    .noStyleTab li{
+        width: 100%;
+        border: none !important;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .noStyleTab li.active a{
+        color: #2AACE3 !important;
+        text-decoration: none;
+    }
+    .noStyleTab li a{
+        font-size: 16px;
+        font-family:'Open Sans regular', sans-serif;
+    }
+    .solutionTriggers li{
+        width: 33%;
+    }
+    .solutionTriggers li a{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1200px){
+    .navbar-second div ul .dropdown{
+        margin: 30px 5px;
+    }
+    .navbar-second div ul .dropdown a{
+        font-size:14px;
+    }
+    .navbar-header h4 small{
+        font-size: 11px;
+    }
+    .header-top .header-search input{
+        width: 85%;
+    }
+    .header-top .nav>li>a{
+        padding: 15px 10px !important;
+    }
+    .socialNav.nav li a{
+        padding:0 !important;
+    }
 }
