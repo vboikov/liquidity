@@ -2,15 +2,331 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <title>Sell-Page</title>
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="vendor/styles/intlTelInput.css">
     <link rel="stylesheet" href="./vendor/styles/global.css">
     <link rel="stylesheet" href="./vendor/styles/home.css">
     <link rel="stylesheet" href="./vendor/styles/sell-page.css">
 </head>
 <body>
-
+<!--HEADER-->
+<div class="container-fluid">
+    <div class="row header-top hidden-xs hidden-sm">
+        <div class="container">
+            <div class="navbar-header col-lg-4 col-md-4">
+                <h4>
+                    <small>Need to Buy or Sell Surplus? Let's Chat 1-800-310-4604</small>
+                </h4>
+            </div>
+            <ul class="nav navbar-nav  col-lg-4 col-md-4">
+                <li class="form-group header-search">
+                    <div class="searchIco" id="searchIco">
+                        <img src="vendor/img/search_icon.png" alt="">
+                    </div>
+                    <input type="text" class="form-control" placeholder="Search">
+                </li>
+            </ul>
+            <div class="col-lg-4 col-md-4">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Investors <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Careers<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right socialNav">
+                    <li>
+                        <a href="">
+                            <img src="vendor/img/social_icn_fb.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="vendor/img/social_icn_in.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="vendor/img/social_icn_twt.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="container navbar-second">
+            <div class="col-lg-3 col-xs-4 col-md-3">
+                <a href="#">
+                    <img src="./vendor/img/liqlogo_main.png" alt="" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-lg-9 col-xs-8 col-md-9">
+                <button type="button" class="navbar-toggle collapsed " data-toggle="collapse"
+                        data-target="#menuList" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="nav navbar-nav hidden-xs hidden-sm ">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Solutions <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Industries <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Resources <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Company <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" role="button">Sell Surplus</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" role="button">Buy Surplus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row header-top hiddenSearch hidden-md">
+        <ul class="col-xs-12 hidden-lg list-unstyled">
+            <li class="header-search active">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="searchIco">
+                    <img src="vendor/img/search_icon.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid menuHidden hidden-lg hidden-md collapse "  id="menuList">
+    <div class="row">
+        <div class="">
+            <div class="panel-group hidden-lg solutionAccordion" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h3>Solutions</h3>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul class="list-unstyled" role="presentation">
+                                <li role="presentation" class="active">
+                                    <a href="#surMan" aria-controls="surMan" role="tab" data-toggle="tab" >Surplus Management</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#asselVal" aria-controls="asselVal" role="tab" data-toggle="tab" >Assel Valuation</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#assSale" aria-controls="assSale" role="tab" data-toggle="tab" >Asset Sales/Marketing</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#selfServ" aria-controls="selfServ" role="tab" data-toggle="tab" >Self-Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h3>Industries</h3>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            <ul class="list-unstyled" role="presentation">
+                                <li role="presentation">
+                                    <a href="#retMan" aria-controls="retMan" role="tab" data-toggle="tab" >Returns Management</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#refur" aria-controls="refur" role="tab" data-toggle="tab" >Refurbishment</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#ecomSol" aria-controls="ecomSol" role="tab" data-toggle="tab" >eCommerce Solutions</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#assRec" aria-controls="assRec" role="tab" data-toggle="tab" >Asset Recovery</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#retSelfServ" aria-controls="retSelfServ" role="tab" data-toggle="tab" >Self-Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h3>Resources</h3>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <ul class="list-unstyled" role="presentation">
+                                <li role="presentation">
+                                    <a href="#govAssSale" aria-controls="govAssSale" role="tab" data-toggle="tab" >Asset Sales/Marketing</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#govSelfServ" aria-controls="select" role="tab" data-toggle="tab" >Self-Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default buySurplusMenuItem">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <h3>Buy Surplus</h3>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <ul class="list-unstyled" role="presentation">
+                                <li role="presentation">
+                                    <a href="#govAssSale" aria-controls="govAssSale" role="tab" data-toggle="tab" >Asset Sales/Marketing</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#govSelfServ" aria-controls="select" role="tab" data-toggle="tab" >Self-Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default loginMenuList">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                <h3>Login</h3>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <ul class="list-unstyled" role="presentation">
+                                <li role="presentation">
+                                    <a href="#govAssSale" aria-controls="govAssSale" role="tab" data-toggle="tab" >Asset Sales/Marketing</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#govSelfServ" aria-controls="select" role="tab" data-toggle="tab" >Self-Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default ">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                <h3>Careers</h3>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <ul class="list-unstyled" role="presentation">
+                                <li role="presentation">
+                                    <a href="#govAssSale" aria-controls="govAssSale" role="tab" data-toggle="tab" >Asset Sales/Marketing</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#govSelfServ" aria-controls="select" role="tab" data-toggle="tab" >Self-Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default ">
+                    <div class="panel-heading" role="tab" id="headingSeven">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                <h3>Company</h3>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <ul class="list-unstyled" role="presentation">
+                                <li role="presentation">
+                                    <a href="#govAssSale" aria-controls="govAssSale" role="tab" data-toggle="tab" >Asset Sales/Marketing</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#govSelfServ" aria-controls="select" role="tab" data-toggle="tab" >Self-Service</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--HEADER END-->
 <!-- sell-page Marketplace block -->
 
 <div class="container-fluid">
@@ -108,13 +424,12 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <span class="circle"></span>
-
+                                        <div class="col-md-3 col-xs-4 col-sm-4">
+                                            <img src="vendor/img/icn_circle1.png" alt="">
                                         </div>
 
-                                        <div class="col-md-9">
-                                            <h2 class="img-heading">Identify, value and <br> prepare surplus</h2>
+                                        <div class="col-md-9 col-xs-8 col-sm-8">
+                                            <h2 class="img-heading">Identify, value and prepare surplus</h2>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -126,7 +441,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 hidden-xs hidden-sm">
                                     <img class="pull-right" src="./vendor/img/sell-prepare-img.jpg">
                                 </div>
 
@@ -135,13 +450,13 @@
                             <div class="row tab-content-indent">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <span class="circle arrows"></span>
+                                        <div class="col-md-3 col-xs-4 col-sm-4">
+                                            <img src="vendor/img/icn_circle2.png" alt="">
 
                                         </div>
 
-                                        <div class="col-md-9">
-                                            <h2 class="img-heading">Determine sale,<br> redeployment, or disposal</h2>
+                                        <div class="col-md-9 col-xs-8 col-sm-8">
+                                            <h2 class="img-heading">Determine sale, redeployment, or disposal</h2>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -153,7 +468,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 hidden-xs hidden-sm">
                                     <img class="pull-right" src="./vendor/img/img_ind2.jpg">
                                 </div>
 
@@ -162,13 +477,13 @@
                             <div class="row tab-content-indent">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <span class="circle target"></span>
+                                        <div class="col-md-3 col-xs-4 col-sm-4">
+                                            <img src="vendor/img/icn_circle3.png" alt="">
 
                                         </div>
 
-                                        <div class="col-md-9">
-                                            <h2 class="img-heading">Select sales channels<br> targeting millions of <br>
+                                        <div class="col-md-9 col-xs-8 col-sm-8">
+                                            <h2 class="img-heading">Select sales channels targeting millions of
                                                 registered buyers</h2>
                                         </div>
                                     </div>
@@ -181,7 +496,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 hidden-xs hidden-sm">
                                     <img class="pull-right" src="./vendor/img/img_ind3.jpg">
                                 </div>
 
@@ -190,14 +505,14 @@
                             <div class="row tab-content-indent">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <span class="circle loupe"></span>
+                                        <div class="col-md-3 col-xs-4 col-sm-4">
+                                            <img src="vendor/img/icn_circle4.png" alt="">
 
                                         </div>
 
-                                        <div class="col-md-9">
-                                            <h2 class="img-heading">Handle everything from<br> buyer vetting to asset
-                                                <br> removal</h2>
+                                        <div class="col-md-9 col-xs-8 col-sm-8">
+                                            <h2 class="img-heading">Handle everything from buyer vetting to asset
+                                                 removal</h2>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -209,7 +524,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 hidden-xs hidden-sm">
                                     <img class="pull-right" src="./vendor/img/img_ind4.jpg">
                                 </div>
 
@@ -218,13 +533,13 @@
                             <div class="row tab-content-indent">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-md-3">
-                                            <span class="circle table"></span>
+                                        <div class="col-md-3 col-xs-4 col-sm-4">
+                                            <img src="vendor/img/icn_circle5.png" alt="">
 
                                         </div>
 
-                                        <div class="col-md-9">
-                                            <h2 class="img-heading">Provide comprehensive<br> post-sale reporting</h2>
+                                        <div class="col-md-9 col-xs-8 col-sm-8">
+                                            <h2 class="img-heading">Provide comprehensive post-sale reporting</h2>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -236,7 +551,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6">
+                                <div class="col-md-6 hidden-xs hidden-sm">
                                     <img class="pull-right" src="./vendor/img/img_ind5.jpg">
                                 </div>
 
@@ -264,18 +579,18 @@
     <div class="row surplus case-study">
         <div class="container">
 
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs hidden-sm">
                 <img src="./vendor/img/casestudy__inset_industrial.jpg" class="pull-left tab-content-indent">
             </div>
 
-            <div class="col-md-6 tab-content-indent">
+            <div class="col-md-6 col-xs-12 col-sm-12 tab-content-indent">
                 <h1>Case Study</h1>
-                <h1>$3 million in Cost Savings <br> from Facility Closures </h1>
+                <h1>$3 million in Cost Savings from Facility Closures </h1>
 
-                <p>An Industrial products manufacturer needed to close three <br> plants in Ohio and Tennessee. It had
-                    just three weeks to find<br>
-                    new homes for the assets in these facilities. Before<br>
-                    redeploying these items internally, the company had several<br>
+                <p>An Industrial products manufacturer needed to close three  plants in Ohio and Tennessee. It had
+                    just three weeks to find
+                    new homes for the assets in these facilities. Before
+                    redeploying these items internally, the company had several
                     hurdles to overcome</p>
 
                 <button class="btn btn-primary yellow-btn">Ready Case Study</button>
@@ -296,10 +611,10 @@
             </div>
 
             <div class="col-lg-12">
-                <div role="tabpanel" class="whyUsTab" id="five-tabs">
+                    <div role="tabpanel" class="provenTab" id="doIt">
                     <!-- whyTab triggers -->
 
-                    <ul class="nav nav-tabs " role="tablist">
+                    <ul class="nav nav-tabs doItTab" role="tablist">
                         <li role="presentation" class="active ">
                             <a href="#online-auction" aria-controls="industrial" role="tab" data-toggle="tab">Online
                                 Auction</a>
@@ -319,13 +634,16 @@
                                 Deal</a>
                         </li>
                     </ul>
-
+                    <div class="clear"></div>
                     <!-- whyTab content -->
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="online-auction">
+                        <div role="tabpanel" class="tab-pane active " id="online-auction">
 
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
+                                </div>
+                                <div class="col-md-8 col-xs-12 col-sm-12 ">
                                     <h2 class="img-heading">Online Auction 1</h2>
 
                                     <p>Donec velit lectus, sodales et rutrum sit amet, malesuada
@@ -343,15 +661,18 @@
                                         Nam ultricies quis tortor sed fermentum..</p>
 
                                 </div>
-                                <div class="col-md-4">
-                                    <img class="bid-img" src="./vendor/img/provenicon_1bid.jpg">
+                                <div class="col-md-4 hidden-xs hidden-sm">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
                                 </div>
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="direct-sales">
 
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
+                                </div>
+                                <div class="col-md-8 col-xs-12 col-sm-12">
                                     <h2 class="img-heading">Online Auction 2</h2>
 
                                     <p>Donec velit lectus, sodales et rutrum sit amet, malesuada
@@ -369,8 +690,8 @@
                                         Nam ultricies quis tortor sed fermentum..</p>
 
                                 </div>
-                                <div class="col-md-4">
-                                    <img class="bid-img" src="./vendor/img/provenicon_1bid.jpg">
+                                <div class="col-md-4 hidden-xs hidden-sm">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
                                 </div>
                             </div>
                         </div>
@@ -378,7 +699,10 @@
                         <div role="tabpanel" class="tab-pane" id="live-auctions">
 
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
+                                </div>
+                                <div class="col-md-8 col-xs-12 col-sm-12">
                                     <h2 class="img-heading">Online Auction 3</h2>
 
                                     <p>Donec velit lectus, sodales et rutrum sit amet, malesuada
@@ -396,8 +720,8 @@
                                         Nam ultricies quis tortor sed fermentum..</p>
 
                                 </div>
-                                <div class="col-md-4">
-                                    <img class="bid-img" src="./vendor/img/provenicon_1bid.jpg">
+                                <div class="col-md-4 hidden-xs hidden-sm">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
                                 </div>
                             </div>
                         </div>
@@ -405,7 +729,10 @@
                         <div role="tabpanel" class="tab-pane" id="buy-it-now">
 
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
+                                </div>
+                                <div class="col-md-8 col-xs-12 col-sm-12">
                                     <h2 class="img-heading">Online Auction 4</h2>
 
                                     <p>Donec velit lectus, sodales et rutrum sit amet, malesuada
@@ -423,8 +750,8 @@
                                         Nam ultricies quis tortor sed fermentum..</p>
 
                                 </div>
-                                <div class="col-md-4">
-                                    <img class="bid-img" src="./vendor/img/provenicon_1bid.jpg">
+                                <div class="col-md-4 hidden-xs hidden-sm">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
                                 </div>
                             </div>
                         </div>
@@ -432,7 +759,10 @@
                         <div role="tabpanel" class="tab-pane" id="principal-deal">
 
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
+                                </div>
+                                <div class="col-md-8 col-xs-12 col-sm-12 ">
                                     <h2 class="img-heading">Online Auction 5</h2>
 
                                     <p>Donec velit lectus, sodales et rutrum sit amet, malesuada
@@ -450,8 +780,8 @@
                                         Nam ultricies quis tortor sed fermentum..</p>
 
                                 </div>
-                                <div class="col-md-4">
-                                    <img class="bid-img" src="./vendor/img/provenicon_1bid.jpg">
+                                <div class="col-md-4 hidden-xs hidden-sm">
+                                    <img class="bid-img img-responsive" src="./vendor/img/provenicon_1bid.jpg">
                                 </div>
                             </div>
                         </div>
@@ -529,35 +859,156 @@
 
             <div class="sell-page-labels">
                 <h1 class="sectionLabel">Need More Assistance</h1>
-                <h2 class="blue-label text-center">See What We Sold</h2>
+                <h2 class="blue-label text-center">Contact Us</h2>
             </div>
 
-            <div class="col-md-6">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                    <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+            <form action="">
+                <div class="col-md-6">
+                    <div class="">
+                        <input type="text" class="form-control" placeholder="First Name*" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="Email*" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" placeholder="Company*" aria-describedby="basic-addon1">
+                        <select class="form-control" id="industrySelect">
+                            <option>Industry*</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <select class="form-control" id="helpSelect">
+                            <option>What Can We Help With?*</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-            </div>
-            <div class="col-md-12">
-                <textarea></textarea>
-            </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Last Name*" aria-describedby="basic-addon1">
+                    <input type="tel" id="phone" class="form-control" placeholder="Phone ((xxx) xxx-xxxx)*" aria-describedby="basic-addon1">
+                    <select class="form-control" id="titleSelect">
+                        <option>Title*</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <textarea placeholder="I am interested in finding out more about..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="prSelect" class="col-md-12 control-label">How Did You Hear About Us?</label>
+                    <div class="col-md-6">
+                        <select class="form-control" id="prSelect">
+                            <option>Email*</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="checkbox col-md-12">
+                        <label>
+                            <input type="checkbox" value="">
+                            Check here if you would prefer not to recieve valuable information from Liquidity Services
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" class="col-md-12">Please enter the number 5489</label>
+                    <div class="col-md-6">
+                        <input type="text" class=" form-control" id="exampleInputEmail1" placeholder="Enter number displayed above*">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
 
 <!-- / Assistance block-->
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<nav class="navbar navbar-default  footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-md-3 footer-links">
+                <ul>
+                    <li>Industrial Solutions</li>
+
+                    <li><a href="#">Surplus Management</a></li>
+                    <li><a href="#">Asset Valuation</a></li>
+                    <li><a href="#">Asset Sales/Marketing</a></li>
+                    <li><a href="#">Self-Service</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 footer-links">
+                <ul>
+                    <li>Retails Solutions</li>
+
+                    <li><a href="#">Returns Management</a></li>
+                    <li><a href="#">Refurbishment</a></li>
+                    <li><a href="#">eCommerce</a></li>
+                    <li><a href="#">Asset Recovery</a></li>
+                    <li><a href="#">Self-Service</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 footer-links ">
+                <ul>
+                    <li>Government Solutions</li>
+
+                    <li><a href="#">Asset Sales/Marketing</a></li>
+                    <li><a href="#">Self-Service</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 footer-links">
+                <ul>
+                    <li>About U</li>
+
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row footer-bottom">
+            <div class="col-md-2 col-xs-12">
+                <a href="#"><img class="footer-logo" src="./vendor/img/liqlogo_footer.png"></a>
+            </div>
+
+            <div class="col-md-4 text col-xs-12">
+                <p>Privacy Policy | © 2017 Liquidity Services, Inc. </p>
+            </div>
+
+            <div class="col-md-2 pull-right col-xs-12">
+                <ul class="bottom-social">
+                    <li><a href="#"><img src="./vendor/img/social_icn_fb.png"> </a></li>
+                    <li><a href="#"><img src="./vendor/img/social_icn_in.png"> </a></li>
+                    <li><a href="#"><img src="./vendor/img/social_icn_twt.png"> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="./vendor/js/script.js"></script>
+<script src="./vendor/js/data.js"></script>
+<!--<script src="./vendor/js/utils.js"></script>-->
+<script src="./vendor/js/intlTelInput.js"></script>
+<script>
+    $("#phone").intlTelInput();
+</script>
 
 </body>
 </html>

@@ -48,6 +48,13 @@
     margin-top: 40px;
 }
 
+.whyUsTab img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
 .circle {
     max-width: 100%;
     background-size: 100%;
@@ -90,11 +97,11 @@
     padding-bottom: 50px !important;
 }
 
-#five-tabs ul li {
+#doIt ul li {
     width: 20%;
 }
 
-#five-tabs ul li a {
+#doIt ul li a {
     font-size: 25px;
     padding: 20px 20px 30px 20px;
 }
@@ -132,4 +139,192 @@
 
 .assistance-block {
     background: #215FAC;
+}
+.assistance-block .sectionLabel{
+    color: #fff;
+}
+
+.assistance-block input, .assistance-block select{
+    margin-bottom: 10px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    border-radius:3px;
+    font-style: italic;
+}
+.intl-tel-input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.assistance-block textarea{
+    width: 100%;
+    text-indent: 15px;
+    padding-top: 10px;
+    min-height: 320px;
+    margin-bottom: 20px;
+
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    border-radius:3px;
+}
+
+.assistance-block label{
+    color: #fff;
+    margin-bottom: 10px;
+    font-family:'Open Sans light', sans-serif;
+    line-height: 19px;
+}
+.assistance-block .checkbox{
+    margin-bottom: 20px;
+}
+
+.assistance-block button{
+    margin-bottom: 60px;
+    background: #8EC640;
+    color: #fff;
+    padding:10px 15px;
+    border:none;
+    outline:none;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    border-radius:3px;
+}
+.assistance-block button:hover {
+    background: #7FB239;
+}
+.provenTab li {
+    width: 50%;
+    text-align: center;
+    border-bottom: 10px solid #cdcdcd;
+    color: #cdcdcd;
+}
+
+.provenTab li a {
+    color: #d8d8d8;
+    font-size: 26px;
+    font-family: 'Open Sans semi-bold';
+
+}
+#doIt ul{
+    height: 95px;
+    margin-bottom: 40px;
+}
+#doIt ul:after{
+    display: none;
+}
+
+#doIt li.active a {
+    color: #004987;
+}
+.provenTab li.active a, .provenTab li a, .doItTab li.active a, .doItTab li a{
+    border: none !important;
+}
+
+.provenTab li:hover {
+    border-color: #9c9c9c;
+    color: #9c9c9c;
+}
+
+.provenTab li.active {
+    border-color: #F7941D;
+    color: #124c86;;
+}
+
+#doIt ul.nav > li > a:hover {
+    border-color: transparent;
+    background-color: transparent !important;
+}
+.sold-items img{
+    display: block;
+    margin: 0 auto;
+}
+
+.sold-items>div{
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 1024px) and (min-width: 320px){
+
+    .whyUsTab .img-heading{
+        font-size: 18px;
+        margin: 0;
+        line-height: 1.3;
+        margin-left: -15px;
+    }
+    .blue-label{
+        font-size: 22px;
+        margin-bottom: 40px;
+        line-height: 1.3;
+    }
+    .surplus h1{
+        font-size: 24px;
+    }
+    .img-description{
+        margin-top: 20px;
+    }
+    .case-study{
+        text-align: center;
+    }
+    .case-study h1{
+        font-size: 22px;
+    }
+    .surplus h2{
+        font-size: 22px;
+    }
+    /*.whyUsTab ul{*/
+        /*margin-left: 0;*/
+        /*margin-right: 0;*/
+    /*}*/
+    .provenTab .doItTab li{
+        width: 48%;
+        padding: 5px;
+        margin:1%;
+        border:1px solid #000;
+    }
+    .provenTab li a{
+        font-size: 14px !important;
+        text-align: center;
+    }
+    .provenTab  li.active, .provenTab  li.active a{
+        background:  #004987;
+        color: #fff !important;
+    }
+    .provenTab  li.active h4{
+        color: #fff;
+    }
+    .provenTab  li h4{
+        font-size: 13px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .provenTab  li:after, .provenTab  li span{
+        display: none;
+    }
+    .provenTab img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .sold-items>div{
+        margin-bottom: 20px;
+    }
+    #doIt ul li{
+        width: 47%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 1024px){
+    .plusAfterIco, .isAfterIco {
+        margin-bottom: 120px;
+    }
+    .plusAfterIco:after, .isAfterIco:after {
+        bottom: -95px;
+        top: auto;
+        right: 50%;
+        margin-right: -30px;
+    }
+    #doIt ul li a{
+        font-size: 18px;
+    }
 }
