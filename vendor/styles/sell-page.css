@@ -1,36 +1,41 @@
 /* marketplace block */
 
-.marketplace {
+.sell-marketplace {
     background-image: url(../img/sell-banner.jpg) !important;
     -moz-background-image: url(../img/sell-banner.jpg) !important;
 }
-.marketplace button {
+
+.sell-marketplace button {
     margin: 0 0 200px 0;
 }
 
-.sell-page-labels h1:first-child{
-       margin: 20px 0 10px 0 !important;
+.sell-page-labels h1:first-child {
+    margin: 20px 0 10px 0 !important;
 }
 
-.better-service-block{
+.better-service-block {
     background: #F8F8F8;
 }
+
 .better-service {
     margin-bottom: 60px;
 }
-.blue-label{
+
+.blue-label {
     font-size: 30px;
     color: #2aace3;
     font-family: 'Open Sans semi-bold', sans-serif;
     margin-bottom: 60px;
 }
 
-.tab-content-indent{
-   padding-top: 80px;
+.tab-content-indent {
+    padding-top: 80px;
 }
+
 .tab-content-indent:last-child {
     padding-bottom: 80px;
 }
+
 .img-heading {
     font-family: 'Open Sans bold', sans-serif;
     color: #124c86;
@@ -54,12 +59,15 @@
 .pen {
     background-position: 0;
 }
+
 .arrows {
     background-position: 0 22.222222%;
 }
-.target{
+
+.target {
     background-position: 0 44.444444%;
 }
+
 .loupe {
     background-position: 0 66.666667%;
 }
@@ -82,7 +90,7 @@
     padding-bottom: 50px !important;
 }
 
-#five-tabs ul li{
+#five-tabs ul li {
     width: 20%;
 }
 
@@ -97,4 +105,31 @@
 
 .tab-text {
     margin-top: 25px;
+}
+
+.sales-strategies-block {
+    padding-bottom: 100px;
+}
+
+.auction-block {
+    background: #F8F8F8;
+}
+.sold-items {
+    background: white;
+    padding: 35px 17.5px;
+    margin-bottom: 100px;
+}
+
+.auctionItemBg span{
+    font-family: 'Open Sans light', sans-serif;
+    font-size: 22px;
+    margin-bottom: 35px;
+    display: block;
+}
+.auctionItemBg span b{
+    font-family: 'Open Sans bold', sans-serif;
+}
+
+.assistance-block {
+    background: #215FAC;
 }
