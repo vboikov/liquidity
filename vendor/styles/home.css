@@ -83,7 +83,9 @@
 
 /*Navbar with dropdown*/
 
-
+.navbar-second {
+    margin: 0 0;
+}
 
 .navbar-second div ul .dropdown {
     margin: 45px 10px;
@@ -288,7 +290,7 @@
 
 }
 
-.percentGraphic button {
+.yellow-btn {
     background: #f6951d;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -297,10 +299,9 @@
     padding: 10px 40px;
     font-size: 21px;
 }
-.percentGraphic button:hover{
+.yellow-btn:hover {
     background: #EB7F15;
 }
-
 /*percent graphic end*/
 /*howWeDoIt*/
 .howWeDoIt{
@@ -440,6 +441,7 @@
 /*comments END*/
 /*clients*/
 .clients{
+    padding-top:80px;
     padding-bottom: 70px;
     background: #fbfbfb;
 }
@@ -796,6 +798,9 @@
 }
 /*marketplace END*/
 
+.navbar-fixed-bottom {
+    position: relative;
+}
 .navbar-fixed-bottom {
     position: relative;
 }
@@ -1241,4 +1246,11 @@
         float: left;
         width: 95px;
     }
+}
+
+.bottom-social li a img:hover {
+    -moz-opacity: 0.7;
+    -ms-opacity: 0.7;
+    opacity: 0.7;
+
 }
