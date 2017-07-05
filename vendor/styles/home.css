@@ -902,6 +902,10 @@
         /*display: block;*/
         /*margin: 0 auto;*/
     /*}*/
+    .navbar-second img{
+        margin: 3px 0 0;
+        width: 95px;
+    }
     .solutionAccordion{
         display: block;
         width: 90%;
