@@ -1,4 +1,10 @@
+.carousel-indicators .active{
+    background-color: #2AACE3;
 
+}
+.carousel-indicators li{
+    background-color: #fff;
+}
 .header-top {
     background: #242d36;
 }
@@ -34,7 +40,7 @@
 .header-top .searchIco {
     text-align: center;
     line-height: 34px;
-    background-color: #215FAC;
+    background-color: #2AACE3;
     width: 34px;
     height: 34px;
     cursor: pointer;
@@ -87,7 +93,7 @@
     font-size: 18px;
     font-weight: 600;
     color: #004987;
-    padding: 10px 10px;
+    padding: 8px 8px;
 }
 
 .navbar-second img {
@@ -179,6 +185,13 @@
     padding-top: 90px;
     margin-bottom: 50px;
     font-family: 'Open Sans bold';
+}
+
+.whyUs h4{
+    font-size: 30px;
+    color: #2aace3;
+    font-family: 'Open Sans semi-bold', sans-serif;
+    margin-bottom: 60px;
 }
 
 .whyUsTab ul {
@@ -283,6 +296,9 @@
     border: none;
     padding: 10px 40px;
     font-size: 21px;
+}
+.percentGraphic button:hover{
+    background: #EB7F15;
 }
 
 /*percent graphic end*/
@@ -424,9 +440,12 @@
 /*comments END*/
 /*clients*/
 .clients{
-    padding-top:80px;
     padding-bottom: 70px;
     background: #fbfbfb;
+}
+
+.clients h2{
+    padding-top: 20px;
 }
 
 .clients h4{
@@ -554,7 +573,7 @@
     margin-bottom: 50px;
 }
 
-.tabCase:after{
+.tabCase span:after{
     content: '';
     position: absolute;
     right: 30px;
@@ -574,6 +593,8 @@
     font-family: 'Open Sans semi-bold', sans-serif;
     color: #2AACE3;
     font-size: 20px;
+    display: block;
+    position: relative;
 }
 .tabCase h5{
     font-family: 'Open Sans regular', sans-serif;
@@ -603,6 +624,7 @@
 .auctionItemBg{
     background: #f7f7f7;
     padding-bottom: 40px;
+    padding-top: 5px;
 }
 
 #auctionTabs h3{
@@ -675,7 +697,7 @@
 /*auction END*/
 /*logistics*/
 .logistics{
-    background: #00a1df;
+    background: #004987;
     padding-bottom: 40px;
 }
 
@@ -683,6 +705,8 @@
     color: #fff;
 }
 .logistics img{
+    display: block;
+    margin: 0 auto;
     margin-bottom: 30px;
 
 }
@@ -702,17 +726,51 @@
 .marketItem{
     width: 100%;
     display: block;
-    height: 177px;
+    min-height: 177px;
     border: 1px solid #95989a;
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 30px;
     background: #fff;
+    position: relative;
 }
 
 .marketItem:hover img{
     filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
     -webkit-filter: grayscale(0%);
+}
+.marketItem:hover .marketLink{
+    display: block;
+}
+
+.marketLink{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #124c86;
+    height: 80px;
+    display: none;
+    line-height: 80px;
+}
+.marketLink a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.marketLink a:after{
+    position: absolute;
+    right: -15px;
+    top: 0px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #2aabe3;
+    line-height: 0px;
+    _border-color: #000000 #000000 #000000 #2aabe3;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 }
 .marketIco{
     height: 115px;
@@ -804,12 +862,65 @@
     opacity: 0.7;
 
 }
+.comments .carousel-indicators{
+    bottom: -40px;
+}
 /*MEDIA*/
-@media (min-width: 320px) and (max-width: 700px) {
-    .navbar-second img{
-        margin:3px 0;
-        float: left;
+@media (min-width: 320px) and (max-width: 1024px) {
+    .menuHidden{
+        background: #242d36;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
+    .loginMenuList{
+        padding-top: 60px;
+    }
+    #accordion .buySurplusMenuItem{
+        border-bottom: 0 !important;
+    }
+    .hiddenSearch{
+        text-align: center;
+    }
+    .hiddenSearch .header-search *{
+        float: none;
+    }
+    .hiddenSearch input{
+        width: 87% !important;
+    }
+    /*#menuList{*/
+        /*width: 95%;*/
+        /*display: block;*/
+        /*margin: 0 auto;*/
+    /*}*/
+    .solutionAccordion{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .solutionAccordion .panel{
+        background: transparent !important;
+        border: none !important;
+        border-bottom:1px solid #fff !important;
+
+    }
+    .solutionAccordion .panel h3{
+        color: #fff;
+        font-size: 16px;
+    }
+    .solutionAccordion .panel-heading{
+        background-image: none !important;
+        background-color: transparent;
+        position: relative;
+    }
+    .solutionAccordion .panel-heading:after{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 16px;
+        content: '+';
+        color: #fff;
+    }
+
     .navbar-second button{
         background: #2AACE3;
         margin: 0;
@@ -828,11 +939,14 @@
         padding-left: 0;
         padding-right: 0;
     }
+    .header-top .header-search input{
+        width: 88%;
+    }
     .surplus-text h1:first-child{
         padding : 40px 0 0;
     }
     .surplus h1{
-        font-size: 30px;
+        font-size: 28px;
         line-height: 1;
         margin-bottom: 10px;
     }
@@ -865,6 +979,12 @@
     .whyUsTab ul{
         margin-left: -30px;
         margin-right: -30px;
+    }
+    .howWeDoIt{
+        padding-bottom: 20px;
+    }
+    #doIt ul.nav>li>a{
+        padding: 2px;
     }
     .plusAfterIco, .isAfterIco{
         margin-bottom: 120px;
@@ -910,7 +1030,7 @@
         color: #fff;
     }
     .howWeDoIt .doItTab li h4{
-        font-size: 16px;
+        font-size: 13px;
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -936,8 +1056,11 @@
     .solutionAccordion .panel-collapse li{
         margin-bottom: 10px;
         padding: 10px 0 10px 0;
-        background: #ebebeb;
         text-indent: 10px;
+        color: #fff;
+    }
+    .solutionAccordion .panel-collapse li a{
+        color: #fff;
     }
     .solutionAccordion .panel-collapse li:last-child{
         margin-bottom: 0;
@@ -957,11 +1080,12 @@
     .tabCase h5{
         font-size: 18px;
     }
-    .tabCase:after {
+    .tabCase span:after {
         content: '';
+        right: auto;
+        top: 0;
+        left: 120px;
         position: absolute;
-        right: 110px;
-        top: 10px;
         display: block;
         width: 0;
         height: 0;
@@ -992,11 +1116,25 @@
         padding-bottom: 40px;
     }
     .auction #auctionTabs li a{
-        font-size: 18px;
+        font-size: 15px;
     }
     #auctionTabs{
         margin-left: -30px;
         margin-right: -30px;
+    }
+    #auctionTabs h3{
+        font-size: 20px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+    #auctionTabs span b{
+        font-size: 24px;
+    }
+    .auctionItemBg{
+        padding-top: 5px;
+    }
+    .logistics img{
+        margin-bottom: 15px;
     }
     .marketplace{
         padding-bottom: 20px;
@@ -1044,7 +1182,27 @@
         width: 33%;
     }
     .solutionTriggers li a{
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .footer-bottom img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    .footer-bottom .text{
+        text-align: center;
+        margin-top: 0;
+    }
+    .footer-bottom .text p{
+        font-size: 12px;
+    }
+    .bottom-social{
+        text-align: center;
+        margin-top: 0;
+    }
+    .footer-links{
+        margin:40px 0 40px;
     }
 }
 
@@ -1066,5 +1224,21 @@
     }
     .socialNav.nav li a{
         padding:0 !important;
+    }
+}
+@media (min-width: 490px) and (max-width: 992px){
+    .surplus-link:after{
+        top: 3px;
+    }
+    .navbar-toggle{
+        display: block !important;
+    }
+    .navbar-second{
+        width: 100% !important;
+    }
+    .navbar-second img{
+        margin:3px 0;
+        float: left;
+        width: 95px;
     }
 }
