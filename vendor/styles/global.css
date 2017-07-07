@@ -17,6 +17,10 @@
     font-family: 'Open Sans bold';
     src: url('../fonts/open-sans/OpenSans-Bold.ttf') format('truetype');
 }
+ @font-face {
+     font-family: 'Open Sans extra-bold';
+     src: url('../fonts/open-sans/OpenSans-ExtraBold.ttf') format('truetype');
+ }
 
 *{
     margin: 0;

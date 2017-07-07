@@ -1,9 +1,20 @@
 .carousel-indicators .active{
     background-color: #2AACE3;
-
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin: 10px;
 }
 .carousel-indicators li{
     background-color: #fff;
+    width: 25px;
+    height: 25px;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin: 10px;
 }
 .iti-flag {background-image: url("../img/flags.png");}
 
@@ -40,6 +51,13 @@
     -moz-transition: 1s;
     -ms-transition: 1s;
     transition: 1s;
+}
+
+.header-top.navbar-inverse a{
+    color: #fff !important;
+}
+.header-top.navbar-inverse a:hover{
+    color: #CDCDCD !important;
 }
 
 .header-top .searchIco {
@@ -80,10 +98,10 @@
     margin-right: 5px;
 }
 
-.socialNav .nav li a:hover img {
-    -moz-opacity: 0.7;
-    -ms-opacity: 0.7;
-    opacity: 0.7;
+.socialNav.nav li a:hover img {
+    -moz-opacity: 0.7 !important;
+    -ms-opacity: 0.7 !important;
+    opacity: 0.7 !important;
 }
 
 /*Navbar with dropdown*/
@@ -93,7 +111,7 @@
 }
 
 .navbar-second div ul .dropdown {
-    margin: 45px 10px;
+    margin: 90px 50px 53px 0;
 }
 
 .navbar-second div ul .dropdown a {
@@ -102,9 +120,11 @@
     color: #004987;
     padding: 8px 8px;
 }
-
+.navbar-second div ul .dropdown a .caret{
+    color:#2AACE3;
+}
 .navbar-second img {
-    margin: 10px 0 0;
+    margin: 50px 0 0;
 }
 
 /*main display*/
@@ -113,22 +133,36 @@
     background-image: url("../img/herobanner_main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 710px;
 }
 
 .surplus h1 {
     color: white;
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0;
+    font-size: 65px;
+    font-family: 'Open Sans light';
+    line-height: 88px;
+    margin-bottom: 18px;
+
 }
 
 .surplus-text h1:first-child {
-    padding: 100px 0 0;
+    padding: 130px 0 0px;
+    margin-bottom: 0 !important;
+}
+
+.surplus-text h1:last-child{
+    margin-bottom: 13px !important;
 }
 
 .surplus h2 {
     font-family: 'Open Sans light', sans-serif;
     color: white;
-    margin: 55px 0 125px;
+    margin: 0 ;
+    font-size: 45px;
+    line-height: 61px;
+    margin-bottom: 82px;
 }
 
 .surplus p:last-child {
@@ -139,9 +173,9 @@
     margin: 0px 15px 0 15px;
     padding: 10px 40px;
     background: #2AACE3;
-    font-size: 21px;
+    font-size: 28px;
     border-radius: 3px;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 
 }
 
@@ -153,13 +187,13 @@
     color: white;
     font-family: 'Open Sans regular', sans-serif;
     position: relative;
-
+    font-size: 27px;
 }
 
 .surplus-link:after {
     position: absolute;
-    right: -15px;
-    top: 3px;
+    right: -20px;
+    top: 10px;
     content: ' ';
     width: 0;
     height: 0;
@@ -190,8 +224,10 @@
     font-size: 40px;
     text-align: center;
     padding-top: 90px;
-    margin-bottom: 50px;
-    font-family: 'Open Sans bold';
+    margin-top: 0;
+    margin-bottom: 66px;
+    font-family: 'Open Sans extra-bold';
+    line-height: 55px;
 }
 
 .whyUs h4{
@@ -210,13 +246,16 @@
     text-align: center;
     border-bottom: 10px solid #cdcdcd;
     color: #cdcdcd;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .whyUsTab li a {
     color: #d8d8d8;
     font-size: 26px;
-    font-family: 'Open Sans semi-bold';
-
+    font-family: 'Open Sans regular';
+    line-height: 47px;
 }
 
 #whyUs li.active a {
@@ -234,6 +273,9 @@
 .whyUsTab li.active {
     border-color: #F7941D;
     color: #124c86;;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
 }
 
 #whyUs ul.nav > li > a:hover {
@@ -262,7 +304,34 @@
 }
 
 .whyUsTab .tab-content {
-    padding-top: 80px;
+    padding-top: 50px;
+}
+.whyUsTab .tab-content div.tab-pane{
+    -moz-opacity: 0.8;
+    -ms-opacity: 0.8;
+    opacity: 0.8;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+.whyUsTab .tab-content div.tab-pane.active{
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+    -moz-opacity: 1 !important;
+    -ms-opacity: 1 !important;
+    opacity: 1 !important;
+}
+.whyUsTab .tab-content h3{
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 50px;
+    margin-top: 0;
+}
+.whyUsTab .tab-content p{
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /*whyUs end*/
@@ -271,28 +340,33 @@
 
 .percentGraphic {
     background: darkblue;
-    padding-top: 110px;
+    padding-top: 107px;
     padding-bottom: 110px;
     -webkit-background-size: cover;
     background-size: cover;
+    height: 740px;
 }
 
 .percentGraphic img {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 .percentGraphic p {
     padding-left: 100px;
     padding-right: 100px;
+    line-height: 50px;
     color: #fff;
-
+    font-size: 32px;
+    font-family: 'Open Sans light';
+    margin-bottom: 0;
 }
 
 .percentGraphic h3 {
     font-family: 'Open Sans bold';
     color: #fff;
-    margin-bottom: 80px;
-
+    margin-bottom: 60px;
+    font-size: 32px;
+    margin-top: 5px;
 }
 
 .yellow-btn {
@@ -310,19 +384,24 @@
 /*percent graphic end*/
 /*howWeDoIt*/
 .howWeDoIt{
-    padding-bottom: 140px;
+    padding-bottom: 90px;
 }
-
+.howWeDoIt .sectionLabel{
+    margin-bottom: 23px;
+}
 .howWeDoIt h3 {
+    margin-top: 0;
     font-size: 30px;
     color: #2aace3;
-    font-family: 'Open Sans semi-bold', sans-serif;
-    margin-bottom: 60px;
+    line-height: 57px;
+    font-family: 'Open Sans bold', sans-serif;
+    margin-bottom: 74px;
 }
 
 .howWeDoIt h4{
-    font-size: 30px;
-    margin-bottom: 60px;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 
 .howWeDoIt li.active h4{
@@ -347,7 +426,6 @@
     content: '';
     display: block;
     position: absolute;
-    bottom: 100px;
     width: 22px;
     height: 22px;
     background: #e7e8e9;
@@ -356,13 +434,17 @@
     border-radius: 50%;
     left: 50%;
     margin-left: -11px;
-    bottom: 162px;
+    bottom: 65px;
     z-index: 100;
 }
 
 .howWeDoIt .doItTab li.active:after{
-    background: #00aeef;
+    background: #F7941D;
 
+}
+
+.howWeDoIt .tab-pane{
+    text-align: center;
 }
 
 #doIt ul.nav>li>a:hover{
@@ -372,13 +454,14 @@
 #doIt ul{
     border-bottom:0;
     position: relative;
-    height: 450px;
+    height: 350px;
+    margin-bottom: 50px;
 }
 
 #doIt ul:after{
     content: '';
     position: absolute;
-    bottom: 190px;
+    bottom: 60px;
     height: 5px;
     width: 100%;
     background: #e7e8e9;
@@ -408,28 +491,51 @@
 /*DOIT sprite END*/
 .howWeDoIt .tab-content h5{
     color: #00aeef;
-    font-family: 'Open Sans semi-bold', sans-serif;
-    font-size: 22px;
+    font-family: 'Open Sans bold', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+.howWeDoIt .tab-content p{
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 0;
 }
 /*howWeDoIt END*/
 /*comments*/
 .comments{
-    padding-top: 70px;
+    padding-top: 100px;
     padding-bottom: 70px;
     background: #004987;
     color: #fff;
 }
 
+#commentsCarousel{
+    padding-bottom: 40px;
+}
+
+#commentsCarousel .carousel-control{
+    top: -50px;
+}
+
 .comments p{
     color: #fff;
     font-family: 'Open Sans light', sans-serif;
-    font-size: 48px;
-    line-height: 1.6;
+    font-size: 35px;
+    line-height: 1.4;
+    margin-bottom: 20px;
 }
 
 .comments h3{
     color: #fff;
     font-family: 'Open Sans bold', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.comments h4{
+    margin-top: 0;
+    font-size: 20px;
 }
 
 .comments a{
@@ -447,12 +553,14 @@
 /*clients*/
 .clients{
     padding-top:80px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     background: #fbfbfb;
 }
 
 .clients h2{
-    padding-top: 20px;
+    padding-top: 0px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .clients h4{
@@ -479,14 +587,24 @@
 /*clients END*/
 /*solutions*/
 .solutions{
-    padding-bottom: 20px;
+    padding-bottom: 100px;
+    padding-top: 0;
+}
+
+.solutions h2{
+    margin-top: 0;
+    padding-top: 100px;
+    margin-bottom: 23px;
+    line-height: 55px;
 }
 .solutions h4{
-    color: #00aeef;
-    font-family: 'Open Sans semi-bold', sans-serif;
-    font-size: 22px;
+    color: #00A1DF;
+    font-family: 'Open Sans bold', sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+    line-height: 57px;
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 80px;
 }
 .solutionsDesktopTabs .triggers h3{
     color: #124c86;
@@ -495,8 +613,8 @@
 }
 
 .solutionsDesktopTabs .triggers ul{
-    padding-left: 30px;
     margin-bottom: 40px;
+    margin-left: -15px;
 }
 
 .solutionsDesktopTabs .triggers ul li{
@@ -509,7 +627,7 @@
     right: -15px;
     top: -22px;
 
-    display: block;
+    display: none;
     width: 0;
     height: 0;
     border-style: solid;
@@ -522,9 +640,9 @@
 
 .solutionsDesktopTabs .triggers a{
     color: #c1bfbf;
-    font-size: 18px;
-    line-height: 2;
-    text-indent: 30px;
+    font-size: 25px;
+    line-height: 45px;
+    margin-left: 30px;
 }
 
 
@@ -544,82 +662,86 @@
 .tabContent img{
     display: block;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
 }
 .tabContent .contentLabel{
-    color: #124c86;
+    color: #0F4D86;
     font-family: 'Open Sans semi-bold', sans-serif;
-    margin-bottom: 40px;
-    font-size: 22px;
-
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 41px;
 }
 .tabContent p{
-    line-height: 1.3;
+    line-height: 24px;
     margin-bottom: 50px;
     font-size: 18px;
 }
 
 .tabContent a{
     padding: 10px 40px;
-    background: #2AACE3;
-    font-size: 21px;
+    background: #00A1DF;
+    font-size: 18px;
     border-radius: 3px;
     display: block;
     float: left;
-    margin-bottom: 75px;
+    margin-bottom: 62px;
     color: #fff;
 }
 .tabContent a:hover{
-    text-transform: none;
+    text-decoration: none;
+    background: #0091D3;
 }
 .tabCase{
     width: 100%;
     background: #fff;
-    padding: 30px;
+    padding: 18px 30px 30px 18px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .tabCase span:after{
     content: '';
     position: absolute;
-    right: 30px;
+    right: 0;
     top: 20%;
     display: block;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 40px 0 40px 50px;
-    border-color: transparent transparent transparent #ebebeb;
+    border-color: transparent transparent transparent #00A1DF;
     line-height: 0px;
-    _border-color: #000000 #000000 #000000 #ebebeb;
+    _border-color: #000000 #000000 #000000 #00A1DF;
     _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 }
 
 .tabCase span{
-    font-family: 'Open Sans semi-bold', sans-serif;
+    font-family: 'Open Sans bold', sans-serif;
+    line-height: 34px;
     color: #2AACE3;
-    font-size: 20px;
+    font-size: 25px;
     display: block;
     position: relative;
 }
 .tabCase h5{
     font-family: 'Open Sans regular', sans-serif;
     color: #124c86;
-    font-size: 40px;
+    font-size: 35px;
+    line-height: 47px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 /*solutions END*/
 /*auction*/
 .auction{
-    background: #f7f7f7;
-    padding-bottom: 120px;
+    background: #f8f8f8;
+    padding-bottom: 100px;
 }
 #auctionTabs .tab-pane>div{
     background: #fff;
     height: auto;
     padding-top: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 /*.auctionItemBg:hover{*/
@@ -629,38 +751,50 @@
 /*}*/
 
 .auctionItemBg{
-    background: #f7f7f7;
-    padding-bottom: 40px;
-    padding-top: 5px;
+    background: #F8F8F8;
+    padding-bottom: 21px;
+    padding-top: 15px;
 }
 
 #auctionTabs h3{
     color: #585858;
-    font-family:'Open Sans semi-bold', sans-serif;
-    margin-bottom: 40px;
-    line-height: 1;
+    font-family:'Open Sans bold', sans-serif;
+    margin-bottom: 25px;
+    margin-top: 0;
+    line-height: 24px;
+    font-size: 18px;
 }
 
 #auctionTabs p{
     font-family:'Open Sans regular', sans-serif;
-    color: #585858;
-    margin-bottom: 30px;
+    color: #575757;
+    line-height: 22px;
+    margin-bottom:  0px;
     font-size: 16px;
 }
 
 #auctionTabs span{
     font-family:'Open Sans light', sans-serif;
-    font-size: 22px;
-    margin-bottom: 35px;
+    font-size: 37px;
+    margin-bottom: 25px;
     display: block;
+    line-height: 51px;
 }
 #auctionTabs span b{
-    font-family:'Open Sans bold', sans-serif;
+    font-family:'Open Sans extra-bold', sans-serif;
 }
 
 .auctionTabs a{
     font-family:'Open Sans light', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #215fac;
+    margin-bottom: 0;
+}
+
+.auctionTabs a:hover{
+    text-decoration: none;
+    color: #2aace3;
 }
 
 .auction ul, .auction li.active a, .auction li a{
@@ -693,8 +827,9 @@
 }
 .auction #auctionTabs li a {
     color: #d8d8d8;
-    font-size: 26px;
-    font-family: 'Open Sans semi-bold';
+    font-size: 35px;
+    line-height: 47px;
+    font-family: 'Open Sans regular';
 }
 #auctionTabs img{
 
@@ -726,8 +861,10 @@
 
 .marketplace h4{
     color: #00a1df;
-    margin-bottom: 45px;
-    font-family:'Open Sans semi-bold', sans-serif;
+    font-size: 30px;
+    line-height: 57px;
+    margin-bottom: 15px;
+    font-family:'Open Sans bold', sans-serif;
 }
 
 .marketItem{
@@ -798,8 +935,9 @@
 }
 
 .marketItem p{
-    font-family:'Open Sans light', sans-serif;
-    font-size: 14px;
+    font-family:'Open Sans regular', sans-serif;
+    font-size: 16px;
+    color: #95989A;
 }
 /*marketplace END*/
 
@@ -825,19 +963,21 @@
 
 .footer-links ul li {
     list-style-type: none;
-    padding: 5px 0 5px;
+    padding: 0;
 }
 
 .footer-links ul li a {
     color: #fbfbfc;
+    font-size: 16px;
+    line-height: 25px;
     text-decoration: none;
-    font-family: 'Open Sans light', sans-serif;
+    font-family: 'Open Sans regular', sans-serif;
 }
 
 .footer-links ul li:first-child {
     color: #00abec;
     margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 25px;
 }
 
 .footer-top {
@@ -854,7 +994,7 @@
 
 .footer-bottom .text p {
     color: #c5c6c7;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .bottom-social {
@@ -874,6 +1014,10 @@
 }
 .comments .carousel-indicators{
     bottom: -40px;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    padding: 0;
 }
 /*MEDIA*/
 @media (min-width: 320px) and (max-width: 1024px) {
