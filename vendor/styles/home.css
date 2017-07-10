@@ -138,10 +138,9 @@
 
 .surplus h1 {
     color: white;
-    font-weight: bold;
     margin: 0;
     font-size: 65px;
-    font-family: 'Open Sans light';
+    font-family: 'Open Sans extra-bold';
     line-height: 88px;
     margin-bottom: 18px;
 
@@ -253,7 +252,7 @@
 
 .whyUsTab li a {
     color: #d8d8d8;
-    font-size: 26px;
+    font-size: 35px;
     font-family: 'Open Sans regular';
     line-height: 47px;
 }
@@ -751,7 +750,6 @@
 /*}*/
 
 .auctionItemBg{
-    background: #F8F8F8;
     padding-bottom: 21px;
     padding-top: 15px;
 }
@@ -807,7 +805,28 @@
     color: #124c86 !important;
 
 }
+.cardInner{
+    background: #F8F8F8;
 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);*/
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s;
+}
+.cardInner .auctionItemBg{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cardInner:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s;
+}
+.cardInner img{
+    margin-bottom: 15px;
+}
 .auction li {
     width: 50%;
     text-align: center;
@@ -1078,6 +1097,9 @@
         content: '+';
         color: #fff;
     }
+    .hiddenSearch ul{
+        margin-bottom: 0;
+    }
 
     .navbar-second button{
         background: #2AACE3;
@@ -1100,24 +1122,31 @@
     .header-top .header-search input{
         width: 88%;
     }
+    .surplus{
+        height: auto;
+    }
     .surplus-text h1:first-child{
         padding : 40px 0 0;
     }
     .surplus h1{
-        font-size: 28px;
-        line-height: 1;
+        font-size: 30px;
+        line-height: 41px;
         margin-bottom: 10px;
+        font-family:'Open Sans extra-bold', sans-serif;
     }
     .surplus h2{
         margin: 30px 0 30px;
         font-size: 24px;
-        line-height: 1.2;
+        line-height: 33px;
     }
     .surplus-btn{
         margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 24px;
     }
     .surplus-link{
-
+        font-size: 18px;
+        line-height: 24px;
     }
     .surplus p:last-child{
         padding: 20px 40px 20px 40px;
@@ -1126,9 +1155,9 @@
         top: 25px;
     }
     .sectionLabel{
-        padding-top: 20px;
-        line-height: 1.1;
-        margin-bottom: 40px;
+        padding-top: 40px !important;
+        line-height: 32px !important;
+        margin-bottom: 35px;
         font-size: 24px;
     }
     .whyUs{
@@ -1137,6 +1166,19 @@
     .whyUsTab ul{
         margin-left: -30px;
         margin-right: -30px;
+    }
+    .whyUsTab li a{
+        font-size: 20px;
+    }
+    .whyUsTab .tab-content{
+        padding-top: 35px;
+    }
+    .whyUsTab .tab-content h3{
+        font-size: 30px;
+    }
+    .whyUsTab .tab-content p{
+        padding-left: 0;
+        padding-right: 0;
     }
     .howWeDoIt{
         padding-bottom: 20px;
@@ -1155,14 +1197,32 @@
     }
     .percentGraphic{
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 0;
+        height: auto;
     }
     .percentGraphic p{
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .percentGraphic h3{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 40px;
+    }
+    .percentGraphic .yellow-btn{
+        margin-bottom: 50px;
+    }
+    .howWeDoIt h3{
+        font-size: 20px;
+        font-family:'Open Sans extra-bold', sans-serif;
+        margin-bottom: 40px;
+        line-height: 27px;
     }
     .comments p{
         font-size: 24px;
+        line-height: 33px;
     }
     .comments .carousel-indicators{
         bottom: -40px;
@@ -1191,6 +1251,7 @@
         font-size: 13px;
         margin-bottom: 0;
         margin-top: 0;
+        color: #95989A;
     }
     .howWeDoIt .doItTab li:after, .howWeDoIt .doItTab li span{
         display: none;
@@ -1202,6 +1263,20 @@
     .howWeDoIt .tab-content img{
         margin-bottom: 20px;
         padding-top: 20px;
+    }
+    .howWeDoIt .tab-content h5{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .howWeDoIt .tab-content p{
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .clients{
+        padding-top: 0px;
+        padding-bottom: 40px;
     }
 
     .solutions .tab-content img{
@@ -1231,12 +1306,20 @@
     }
     .tabContent .contentLabel{
         margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .solutions{
+        padding-bottom: 50px;
     }
     .tabCase{
         padding: 10px;
     }
+    .tabCase span{
+        font-size: 20px;
+        line-height: 24px;
+    }
     .tabCase h5{
-        font-size: 18px;
+        font-size: 14px;
     }
     .tabCase span:after {
         content: '';
@@ -1260,12 +1343,19 @@
     }
     .tabContent p{
         margin-bottom: 20px;
+        font-size: 18px;
     }
     .tabContent a{
         margin-bottom: 20px;
+        font-size: 18px;
     }
     .solutions h4{
         margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .solutions .tabContent{
+        padding-top: 20px;
     }
     .solutionAccordion h4{
         margin-bottom: 0;
@@ -1301,6 +1391,10 @@
         filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
         -webkit-filter: grayscale(0%);
     }
+    .marketItem{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .marketPlaces ul{
         margin-bottom: 20px;
         border:none;
@@ -1311,6 +1405,8 @@
     }
     .marketPlaces li a{
         color: #c5c6c7;
+        line-height: 26px;
+        padding: 0 15px;
     }
     .marketPlaces li.active a{
         background: transparent !important;
@@ -1318,9 +1414,9 @@
         border:none !important;
     }
     .solutionsDesktopTabs .noStyleTab{
-        padding: 0 0 0 60px;
-        padding-top: 40px;
-        margin-bottom: 40px;
+        padding: 0 0 0 20px;
+        padding-top: 25px;
+        margin-bottom: 25px;
     }
     .noStyleTab li{
         width: 100%;
@@ -1335,12 +1431,22 @@
     .noStyleTab li a{
         font-size: 16px;
         font-family:'Open Sans regular', sans-serif;
+        line-height: 26px;
+
     }
     .solutionTriggers li{
-        width: 33%;
+        width: auto;
     }
     .solutionTriggers li a{
-        font-size: 14px;
+        font-size: 20px;
+        padding: 10px 10px !important;
+    }
+    .whyUsTab li.active a{
+        color: #004987 !important;
+    }
+    .solutions  .solutionTriggers{
+        margin-left: -45px;
+        margin-right: -45px;
     }
     .footer-bottom img{
         display: block;
@@ -1363,7 +1469,20 @@
         margin:40px 0 40px;
     }
 }
-
+@media (min-width: 992px) and (max-width: 1200px){
+    .navbar-second button{
+        display: none !important;
+    }
+    .navbar-second img{
+        margin: 0 auto;
+        margin-top: 13px;
+        width: 150px;
+    }
+    #body .navbar-second{
+        padding: 0 15px 0 15px;
+        width: 970px;
+    }
+}
 @media (min-width: 701px) and (max-width: 1200px){
     .navbar-second div ul .dropdown{
         margin: 30px 5px;
@@ -1384,7 +1503,7 @@
         padding:0 !important;
     }
 }
-@media (min-width: 490px) and (max-width: 992px){
+@media (min-width: 490px) and (max-width: 991px){
     .surplus-link:after{
         top: 3px;
     }

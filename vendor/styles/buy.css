@@ -6,6 +6,10 @@
     background: #F8F8F8;
 }
 
+.whyUs .sectionLabel{
+    margin-bottom: 23px !important;
+}
+
 .liquidity-service{
     text-align: center;
 }
@@ -16,17 +20,18 @@
 }
 
 .easyBuying h3{
-    font-size: 18px;
+    font-size: 26px;
+    line-height: 36px;
     color: #2aace3;
     font-family: 'Open Sans bold', sans-serif;
     margin:0;
-    margin-bottom: 10px;
-    line-height: 1.3;
 }
 .easyBuying p{
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 80px;
+    line-height: 27px;
+    font-size: 20px;
 }
 .assistance-block{
     background: #F8F8F8;
@@ -45,7 +50,7 @@
 }
 .assistance-block textarea{
     width: 100%;
-    text-indent: 15px;
+    padding-left: 15px;
     padding-top: 10px;
     min-height: 320px;
     margin-bottom: 20px;
@@ -67,7 +72,6 @@
 
 .assistance-block button{
     margin-bottom: 60px;
-    background: #8EC640;
     color: #fff;
     padding:10px 15px;
     border:none;
@@ -84,11 +88,12 @@
     font-size: 30px;
     color: #2aace3;
     font-family: 'Open Sans bold', sans-serif;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .buySlider{
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .buySlider select{
@@ -124,7 +129,7 @@
     width: 100%;
     position: relative;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .buySlider select{
@@ -167,15 +172,14 @@
 
 .carousel-indicators li{
     width: 18%;
-    height: 38px;
-    line-height: 38px;
+    line-height: 59px;
     height: auto;
     display: block;
     float: left;
     margin: 1%;
     border: 1px solid #efefef;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 10px;
     border-radius: 0;
     text-indent:0;
@@ -184,8 +188,7 @@
 .carousel-indicators li.active{
     background: #124c86;
     color: #fff;
-    height: 38px;
-    line-height: 38px;
+    line-height: 59px;
     width: 18%;
     height: auto;
     display: block;
@@ -193,7 +196,7 @@
     margin: 1%;
     border: 1px solid #efefef;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 10px;
     border-radius: 0;
     text-indent:0;
@@ -205,7 +208,8 @@
     background-position: center center;
     background-repeat:no-repeat;
     left: -15%;
-    top: 140px;
+    top: 260px;
+    height: 470px;
 }
 
 
@@ -214,15 +218,20 @@
     background-position: center center;
     background-repeat:no-repeat;
     right: -15%;
-    top: 140px;
+    top: 260px;
+    height: 470px;
 }
 
 .item{
-    padding-top: 80px;
+    padding-top: 120px;
 }
 
 .item p{
     margin-bottom: 40px;
+    line-height: 24px;
+}
+.item a{
+    color:#00AEEF;
 }
 
 .item a:hover{
@@ -232,11 +241,61 @@
 .carousel button{
     margin-left: 0;
     border:0;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 27px;
+    padding:15px 40px;
+}
+.orange-btn{
+    background: #F7941D;
+}
+.orange-btn:hover{
+    background: #EB7F15;
+}
+.assistance-block .sectionLabel{
+    margin-bottom: 23px;
+}
+.assistance-block .blue-label{
+    line-height: 57px;
+    margin-bottom: 42px;
+    color: #00A1DF;
 }
 
 
 @media (max-width: 1024px) and (min-width: 320px){
+    .surplusBuy{
+        padding-bottom: 100px;
+    }
+    .surplus h2{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .whyUs{
+        padding-bottom: 0;
+    }
+    .whyUs .sectionLabel{
+        margin-bottom: 14px!important;
+        font-size: 23px !important;
+    }
+    .whyUs h4{
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+    .liquidity-service img{
+        margin-bottom: 10px;
+    }
+    .liquidity-service p{
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    .easyBuying h3{
+        font-size: 24px;
+    }
+    .easyBuying p{
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
     .buySlider{
         padding-bottom: 120px;
     }
@@ -257,24 +316,38 @@
         max-width: 80%;
         display: block;
         margin: 0 auto !important;
-
+        padding: 15px 0;
     }
 
     .carousel-control{
-        width: 40px;
-        height: 40px;
-        bottom: -80px;
+        width: 30px;
+        height: 30px !important;
+        bottom: -60px;
         top: inherit !important;
         -webkit-background-size: contain;
         background-size: contain;
     }
     .carousel-control.right{
         right: 50%;
-        margin-right:-60px;
+        margin-right:-45px;
     }
     .carousel-control.left{
         left: 50%;
-        margin-left:-60px;
+        margin-left:-45px;
+    }
+    .select{
+        margin-bottom: 20px;
+    }
+    .item{
+        padding-top: 0;
+    }
+    .assistance-block .blue-label{
+        font-size: 20px;
+        line-height: 27px;
+        font-family:'Open Sans extra-bold', sans-serif;
+    }
+    .assistance-block button{
+        width: 60%;
     }
 }
 

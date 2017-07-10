@@ -16,7 +16,7 @@
 
 <!--HEADER-->
 <div class="container-fluid">
-    <div class="row header-top hidden-xs hidden-sm">
+    <div class="row header-top navbar-inverse hidden-xs hidden-sm">
         <div class="container">
             <div class="navbar-header col-lg-4 col-md-4">
                 <h4>
@@ -24,7 +24,7 @@
                 </h4>
             </div>
             <ul class="nav navbar-nav  col-lg-4 col-md-4">
-                <li class="form-group header-search">
+                <li class="form-group header-search active">
                     <div class="searchIco" id="searchIco">
                         <img src="vendor/img/search_icon.png" alt="">
                     </div>
@@ -34,26 +34,12 @@
             <div class="col-lg-4 col-md-4">
                 <ul class="nav navbar-nav navbar-left">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Investors <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
+                        <a href="#" class=""  aria-haspopup="true"
+                           aria-expanded="false">Investors</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Careers<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
+                        <a href="#" aria-haspopup="true"
+                           aria-expanded="false">Careers</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right socialNav">
@@ -115,15 +101,10 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Resources <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
+                        <a href="#" role="button">Sell Surplus</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" role="button">Buy Surplus</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -135,12 +116,6 @@
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Separated link</a></li>
                         </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" role="button">Sell Surplus</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" role="button">Buy Surplus</a>
                     </li>
                 </ul>
             </div>
@@ -408,15 +383,20 @@
             <div class="col-lg-6 col-lg-offset-3">
                 <div class="select">
                     <select name="" id="assetType" class="form-control">
-                        <option value="1">Select Asset Type</option>
-                        <option value="2">Select Asset Type2</option>
-                        <option value="3">Select Asset Type3</option>
-                        <option value="4">Select Asset Type4</option>
+                        <option value="1">Retail consumer products</option>
+                        <option value="2">Construction & Heavy Equipment</option>
+                        <option value="3">Government Surplus</option>
+                        <option value="4">Scrap</option>
+                        <option value="5">Energy Equipment</option>
+                        <option value="6">Biotech & Health</option>
+                        <option value="7">Industrial equipment</option>
+                        <option value="8">Vehicles</option>
+                        <option value="9">Other</option>
                     </select>
                 </div>
             </div>
             <div class="clear"></div>
-            <div id="buyCarousel" class="carousel slide " data-ride="carousel">
+            <div id="buyCarousel" class="carousel slide " data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators hidden-xs hidden-sm hidden-md">
                     <li data-target="#buyCarousel" data-slide-to="0" class="active">GoIndustry DoveBid</li>
                     <li data-target="#buyCarousel" data-slide-to="1">Network International</li>
@@ -658,7 +638,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <button type="submit">Send</button>
+                    <button type="submit" class="orange-btn">Send</button>
                 </div>
             </form>
         </div>
